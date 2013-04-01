@@ -1,0 +1,1 @@
+xjc -p br.inf.portalfiscal.nfe.xml.pl006q br/com/jcomputacao/nfe/xml/pl006q/nfe_v2.00.xsd br/com/jcomputacao/nfe/xml/pl006q/inutNFe_v2.00.xsd br/com/jcomputacao/nfe/xml/pl006q/cancNFe_v2.00.xsd br/com/jcomputacao/nfe/xml/pl006q/consCad_v2.00.xsd br/com/jcomputacao/nfe/xml/pl006q/consSitNFe_v2.01
