@@ -118,7 +118,9 @@ public class ProcessamentoEventosTest {
             Marshaller marshaller = context.createMarshaller();
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             marshaller.marshal(procEvent, baos);
-            System.out.println(baos.toString());
+            xml = baos.toString();
+            xml = xml.replaceAll("xmlns:ns2=\".+#\"\\s", "").replaceAll("ns2:", "");
+            System.out.println(xml);
         } catch (JAXBException ex) {
             Logger.getLogger(ProcessamentoEventosTest.class.getName()).log(Level.SEVERE, null, ex);
         }
