@@ -10,13 +10,17 @@ xjc -p br.inf.portalfiscal.nfe.xml.pl006q.consultaStatusServico br/com/jcomputac
 xjc -p br.inf.portalfiscal.nfe.xml.pl006q.eventoCancelamento br/com/jcomputacao/nfe/xml/pl006q/eventoCancNFe_v1.00.xsd
 
 
+FORMA QUE DEU CERTO FAZER EM 19/04/2013 PARA REFAZER A PARTE DA NFES AGORA COM A NOVA FORMA DE CANCELAR NFE
+xjc file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/tiposBasico_v1.03.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteEventoCancNFe_v1.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteInutNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteNFe_v2.00.xsd -d ///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/inf/portalfiscal/nfe/xml/pl006q/nfes
 
 
+ESSA ANOOTATION FOI COLOCADA NO FIM DO ARQUIVO tipoBasico_v10.03.xsd ANTES DE FECHAR O </xs:schema>
 
+       <xs:annotation>
+           <xs:appinfo>
+              <jaxb:globalBindings typesafeEnumMaxMembers="1000" />
+           </xs:appinfo>
+       </xs:annotation>
 
-
-
-
-
-FOI O MAIS PERTO DE DAR CERTO 
-xjc -p br.inf.portalfiscal.nfe.xml.pl006q.teste file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/nfe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/inutNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/cancNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/consCad_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/consSitNFe_v2.01
+E NO CABEÇALHO (<xs:schema) FOI COLOCADO:
+xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0"
