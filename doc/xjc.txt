@@ -8,3 +8,15 @@ xjc -p br.inf.portalfiscal.nfe.xml.pl006q.consultaCadadastro br/com/jcomputacao/
 xjc -p br.inf.portalfiscal.nfe.xml.pl006q.consultaNfe br/com/jcomputacao/nfe/xml/pl006q/consSitNFe_v2.01.xsd
 xjc -p br.inf.portalfiscal.nfe.xml.pl006q.consultaStatusServico br/com/jcomputacao/nfe/xml/pl006q/consStatServ_v2.00.xsd
 xjc -p br.inf.portalfiscal.nfe.xml.pl006q.eventoCancelamento br/com/jcomputacao/nfe/xml/pl006q/eventoCancNFe_v1.00.xsd
+
+
+
+
+
+
+
+
+
+
+FOI O MAIS PERTO DE DAR CERTO 
+xjc -p br.inf.portalfiscal.nfe.xml.pl006q.teste file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/nfe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/inutNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/cancNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/consCad_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/consSitNFe_v2.01
