@@ -14,7 +14,7 @@ FORMA QUE DEU CERTO FAZER EM 19/04/2013 PARA REFAZER A PARTE DA NFES AGORA COM A
 xjc file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/tiposBasico_v1.03.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteEventoCancNFe_v1.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteInutNFe_v2.00.xsd file:///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/leiauteNFe_v2.00.xsd -d ///C:/Users/Murilo.Lima/Documents/DBFCadastroUnificado/NFeXML2PL006q/src/br/inf/portalfiscal/nfe/xml/pl006q/nfes
 
 
-ESSA ANOOTATION FOI COLOCADA NO FIM DO ARQUIVO tipoBasico_v10.03.xsd ANTES DE FECHAR O </xs:schema>
+ESSA ANOOTATION FOI COLOCADA NO FIM DO ARQUIVO tipoBasico_v1.03.xsd ANTES DE FECHAR O </xs:schema>
 
        <xs:annotation>
            <xs:appinfo>
