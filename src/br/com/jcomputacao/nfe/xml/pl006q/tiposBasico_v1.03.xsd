@@ -6,8 +6,8 @@
 <!-- PL_006d - 20/08/09 - acrescentado o tipo númerico com 10 casas decimais,15 casas inteiras e hora  // v2.0-->
 <!-- PL_005d - 11/08/09 - alteração no enumeration do tpais para nova tabela de paises do BACEN-->
 <!-- PL_005b - 24/10/08 - acrescentado a tabela do tpais   e outras alterações para eliminar os brancos no início e fim do campo   -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:nfe="http://www.portalfiscal.inf.br/nfe" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	<xs:simpleType name="TCodUfIBGE">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0" xmlns:nfe="http://www.portalfiscal.inf.br/nfe" targetNamespace="http://www.portalfiscal.inf.br/nfe" elementFormDefault="qualified" attributeFormDefault="unqualified">	
+        <xs:simpleType name="TCodUfIBGE">
 		<xs:annotation>
 			<xs:documentation>Tipo Código da UF da tabela do IBGE</xs:documentation>
 		</xs:annotation>
@@ -788,4 +788,9 @@ acrescentado:
 			<xs:pattern value="(([0-1][0-9])|([2][0-3])):([0-5][0-9]):([0-5][0-9])"/>
 		</xs:restriction>
 	</xs:simpleType>
+        <xs:annotation>
+           <xs:appinfo>
+              <jaxb:globalBindings typesafeEnumMaxMembers="1000" />
+           </xs:appinfo>
+        </xs:annotation>
 </xs:schema>
