@@ -1,5 +1,6 @@
 package br.inf.portalfiscal.nfe.xml.pl006q.eventoCancelamento;
 
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TProcEvento;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -91,7 +92,7 @@ public class ProcessamentoEventosTest {
         TProcEvento procEvent = null;
         JAXBContext context = null;
         try {
-            context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.eventoCancelamento");
+            context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfes");
             unmarshaller = context.createUnmarshaller();
             ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes("UTF-8"));
             procEvent = unmarshaller.unmarshal(new StreamSource(bais), TProcEvento.class).getValue();

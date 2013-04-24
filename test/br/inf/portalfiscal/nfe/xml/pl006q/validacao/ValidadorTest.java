@@ -5,19 +5,11 @@
 package br.inf.portalfiscal.nfe.xml.pl006q.validacao;
 
 import br.com.jcomputacao.nfe.validacao.Validador;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.ErrorHandler;
 import org.junit.After;
@@ -26,7 +18,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
@@ -89,7 +80,7 @@ public class ValidadorTest {
         };
         xml = xml.replaceAll("xmlns:ns2=\".+#\"\\s", "").replaceAll("ns2:", "");
         xml = xml.trim().replaceFirst("^([\\W]+)<","<");
-        URL schemaLocation = new URL("file:///Users/Murilo.Lima/Documents/DBFAssinado2/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q");
+        URL schemaLocation = new URL("file:///Users/Murilo.Lima/Documents/DBFAssinado2/NFeXML2PL006q/src/br/com/jcomputacao/nfe/xml/pl006q/consSitNFe_v2.01.xsd");
         Validador instance = new Validador();
         instance.validar(xml, handler, schemaLocation);
         fail("The test case is a prototype.");

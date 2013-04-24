@@ -4,6 +4,8 @@
  */
 package br.inf.portalfiscal.nfe.xml.pl006q.consultaNfe;
 
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TConsSitNFe;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.ObjectFactory;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -56,7 +58,7 @@ public class ConsultaSituacaoNfeTest {
         consSitNfe.setVersao("2.00");
         consSitNfe.setXServ("CONSULTAR");
         
-        JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.consultaNfe");
+        JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfes");
         
         Marshaller marshaller = context.createMarshaller();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -71,6 +73,6 @@ public class ConsultaSituacaoNfeTest {
         bais.close();
         
         assertNotNull(consSitNfe);
-        assertNotNull(consSitNfe.getChNFe());
+        assertNotNull(consSitNfe.getChNFe());        
     }
 }

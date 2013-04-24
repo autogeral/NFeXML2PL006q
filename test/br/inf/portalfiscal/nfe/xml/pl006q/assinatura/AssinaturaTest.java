@@ -5,16 +5,16 @@
 package br.inf.portalfiscal.nfe.xml.pl006q.assinatura;
 
 
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe.InfNFe.InfAdic;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TUfEmi;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TEnderEmi;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe.InfNFe.Emit;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe.InfNFe;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNfeProc;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.ObjectFactory;
 import br.com.jcomputacao.nfe.assinatura.Assinador;
 import br.com.jcomputacao.nfe.assinatura.AssinadorTipo;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe.InfNFe.InfAdic;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe.InfNFe.Emit;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe.InfNFe;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.ObjectFactory;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TEnderEmi;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNfeProc;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TUfEmi;
 import java.io.ByteArrayOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -86,7 +86,7 @@ public class AssinaturaTest {
          tnfe.setInfNFe(inf);
          tnfeProc.setNFe(tnfe);
         try {
-            JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfe");
+            JAXBContext context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfes");
             Marshaller marshaller = context.createMarshaller();
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);

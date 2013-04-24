@@ -4,7 +4,7 @@
  */
 package br.inf.portalfiscal.nfe.xml.pl006q.consultaNfe;
 
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TRetConsReciNFe;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TRetConsReciNFe;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -60,7 +60,7 @@ public class ConsultaReciboNfeTest {
         TRetConsReciNFe ret = null;
         JAXBContext context = null;
         
-        context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfe");
+        context = JAXBContext.newInstance("br.inf.portalfiscal.nfe.xml.pl006q.nfes");
         unmarshaller = context.createUnmarshaller();
         ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes("UTF-8"));
         ret = unmarshaller.unmarshal(new StreamSource(bais), TRetConsReciNFe.class).getValue();
