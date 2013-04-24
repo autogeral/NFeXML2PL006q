@@ -5,8 +5,8 @@
 
 package br.com.jcomputacao.nfe;
 
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe;
-import br.inf.portalfiscal.nfe.xml.pl006q.nfe.TNFe.InfNFe.Ide;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe;
+import br.inf.portalfiscal.nfe.xml.pl006q.nfes.TNFe.InfNFe.Ide;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.NumberFormat;
