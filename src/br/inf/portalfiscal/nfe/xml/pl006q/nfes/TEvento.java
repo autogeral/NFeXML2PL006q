@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -126,6 +127,7 @@ import org.w3._2000._09.xmldsig.SignatureType;
  * 
  * 
  */
+@XmlRootElement(name="evento")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TEvento", propOrder = {
     "infEvento",
