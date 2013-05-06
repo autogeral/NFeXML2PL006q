@@ -94,7 +94,7 @@ public class Assinador {
         if (AssinadorTipo.INFORMACAO.equals(tipo)) {
             tag = "infNFe";
         } else if (AssinadorTipo.CANCELAMENTO.equals(tipo)) {
-            tag = "infCanc";
+            tag = "infEvento";
         } else if (AssinadorTipo.INUTILIZACAO.equals(tipo)) {
             tag = "infInut";
         }
@@ -106,7 +106,7 @@ public class Assinador {
         ByteArrayInputStream bais = new ByteArrayInputStream(xml.getBytes(Charset.forName("UTF-8")));
         Document docs = builder.parse(bais);
         bais.close();
-
+        
         NodeList elements = docs.getElementsByTagName(tag);
         Element el = (Element) elements.item(0);
         String id = el.getAttribute("Id");
