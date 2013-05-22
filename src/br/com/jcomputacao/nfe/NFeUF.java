@@ -99,4 +99,13 @@ public enum NFeUF {
         }
         return null;
     }
+    
+    public static NFeUF porCodigo(int codigo) {
+        for (NFeUF uf : NFeUF.values()) {
+            if (uf.codigo == codigo) {
+                return uf;
+            }
+        }
+        return null;
+    }
 }
