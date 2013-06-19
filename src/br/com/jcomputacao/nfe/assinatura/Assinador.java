@@ -108,6 +108,9 @@ public class Assinador {
         bais.close();
         
         NodeList elements = docs.getElementsByTagName(tag);
+        if (elements.getLength() == 0) {
+            throw new Exception("Nao conseguiu encontrar a TAG <" + tag + "> no documento\nXML : " + xml);
+        }
         Element el = (Element) elements.item(0);
         String id = el.getAttribute("Id");
 
