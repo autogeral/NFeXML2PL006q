@@ -86,10 +86,10 @@ public class NFeUtil {
     }
 
     /**
-     * 0 - emissão de NF-e com aplicativo do contribuinte;
-     * 1 - emissão de NF-e avulsa pelo Fisco;
-     * 2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, atrav�s do site do Fisco;
-     * 3 - emissão NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
+     * 0 - emissao de NF-e com aplicativo do contribuinte;
+     * 1 - emissao de NF-e avulsa pelo Fisco;
+     * 2 - emissao de NF-e avulsa, pelo contribuinte com seu certificado digital, atraves do site do Fisco;
+     * 3 - emissao NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
      */
     public static int tipoProcessamento(){
         return tipoProcessamento;
@@ -99,19 +99,34 @@ public class NFeUtil {
         return modelo;
     }
 
-    public static String getCertificadoSenha() {
-        return System.getProperty("nfe.certificado.senha");
+    public static String getCertificadoSenha(String cnpj) {
+        String key = "nfe.certificado.senha";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return value;
+        }
+        return System.getProperty(key, "jssecacerts");
     }
 
-    public static String getCertificadoCaminho(){
-        return System.getProperty("nfe.certificado.caminho");
+    public static String getCertificadoCaminho(String cnpj){
+        String key = "nfe.certificado.caminho";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return value;
+        }
+        return System.getProperty(key, "jssecacerts");
     }
 
-    public static String getCertificadoSefazCaminho() {
-        return System.getProperty("nfe.certificadoSefaz.caminho", "jssecacerts");
+    public static String getCertificadoSefazCaminho(String cnpj) {
+        String key = "nfe.certificadoSefaz.caminho";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return value;
+        }
+        return System.getProperty(key, "jssecacerts");
     }
 
-    public static String getCertificadoTipo() {
+    public static String getCertificadoTipo(String cnpj) {
         return System.getProperty("nfe.certificado.tipo", "A1");
     }
 

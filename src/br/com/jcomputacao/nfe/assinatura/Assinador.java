@@ -89,7 +89,7 @@ public class Assinador {
     private static final String PROVIDER_CLASS_NAME = "org.jcp.xml.dsig.internal.dom.XMLDSigRI";
     private static final String PROVIDER_NAME = "jsr105Provider";
 
-    public static String assinar(String xml, String caminhoCertificado, String senha, AssinadorTipo tipo) throws Exception {
+    public static String assinar(String xml, String caminhoCertificado, String senha, AssinadorTipo tipo, String cnpj) throws Exception {
         String tag = "";
         if (AssinadorTipo.INFORMACAO.equals(tipo)) {
             tag = "infNFe";
@@ -128,7 +128,7 @@ public class Assinador {
         SignedInfo si = fac.newSignedInfo(fac.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE, (C14NMethodParameterSpec) null), fac.newSignatureMethod(SignatureMethod.RSA_SHA1, null), Collections.singletonList(ref));
 
         KeyStore ks = null;
-        if("A3".equals(NFeUtil.getCertificadoTipo())) {
+        if("A3".equals(NFeUtil.getCertificadoTipo(cnpj))) {
             Provider p = new sun.security.pkcs11.SunPKCS11(System.getProperty("nfe.certificado.token.cfg", "C:\\DBF\\dist\\token.cfg"));
             Security.addProvider(p);
             ks = KeyStore.getInstance("PKCS11");

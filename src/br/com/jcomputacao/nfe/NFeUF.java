@@ -56,7 +56,7 @@ public enum NFeUF {
     PERNAMBUCO(26, "PE", "Pernambuco"),
     ALAGOAS(27, "AL", "Alagoas"),
     SERGIPE(28, "SE", "Sergipe"),
-    BAHIA(29, "BH", "Bahia"),
+    BAHIA(29, "BA", "Bahia"),
     MINAS(31, "MG", "Minas Gerais"),
     ESPIRITO_SANTO(32, "ES", "Esparito Santo"),
     RIO_JANEIRO(33, "RJ", "Rio de Janeiro"),

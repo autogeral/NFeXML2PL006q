@@ -101,7 +101,7 @@ public class AssinaturaTest {
             AssinadorTipo assinadorTipo = AssinadorTipo.INFORMACAO;
             String expResult = "";
             try {
-                String result = Assinador.assinar(xml, certificadoCaminho, senha, assinadorTipo);
+                String result = Assinador.assinar(xml, certificadoCaminho, senha, assinadorTipo, "05437537000137");
                 System.out.println(result);
                 System.out.flush();
                 assertEquals(expResult, result);
