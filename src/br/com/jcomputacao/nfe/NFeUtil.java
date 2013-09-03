@@ -134,4 +134,13 @@ public class NFeUtil {
         }
         return System.getProperty(key, "A1");
     }
+
+    public static boolean getCertificadoMultiplo(String cnpj) {
+        String key = "nfe.certificado.multiplo";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return Boolean.parseBoolean(value);
+        }
+        return Boolean.parseBoolean(System.getProperty(key, "false"));
+    }
 }
