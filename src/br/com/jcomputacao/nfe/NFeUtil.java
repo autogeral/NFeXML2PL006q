@@ -127,7 +127,11 @@ public class NFeUtil {
     }
 
     public static String getCertificadoTipo(String cnpj) {
-        return System.getProperty("nfe.certificado.tipo", "A1");
+        String key = "nfe.certificado.tipo";
+        String value = System.getProperty(cnpj + "." + key);
+        if (value != null) {
+            return value;
+        }
+        return System.getProperty(key, "A1");
     }
-
 }
