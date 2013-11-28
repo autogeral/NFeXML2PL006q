@@ -41,6 +41,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.lang.reflect.Constructor;
 import java.nio.charset.Charset;
 import java.security.KeyStore;
 import java.security.Provider;
@@ -129,7 +130,14 @@ public class Assinador {
 
         KeyStore ks = null;
         if("A3".equals(NFeUtil.getCertificadoTipo(cnpj))) {
-            Provider p = new sun.security.pkcs11.SunPKCS11(System.getProperty("nfe.certificado.token.cfg", "C:\\DBF\\dist\\token.cfg"));
+            String tokenCfg = System.getProperty("nfe.certificado.token.cfg", "C:\\DBF\\dist\\token.cfg");
+            String className = "sun.security.pkcs11.SunPKCS11";
+            Class<?> providerClass = Class.forName(className);
+            if(providerClass==null) {
+                throw new Exception("Nao encontrou a classe " + className + "\nPara conseguir assinar o documento!");
+            }
+            Constructor<?> constructor = providerClass.getConstructor(String.class);
+            Provider p = (Provider) constructor.newInstance(tokenCfg);
             Security.addProvider(p);
             ks = KeyStore.getInstance("PKCS11");
             ks.load(null, senha.toCharArray());
