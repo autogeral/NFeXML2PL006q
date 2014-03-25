@@ -113,6 +113,7 @@ public class Assinador {
             throw new Exception("Nao conseguiu encontrar a TAG <" + tag + "> no documento\nXML : " + xml);
         }
         Element el = (Element) elements.item(0);
+        el.setIdAttribute("Id", true);
         String id = el.getAttribute("Id");
 
         String providerName = System.getProperty(PROVIDER_NAME, PROVIDER_CLASS_NAME);
@@ -181,7 +182,9 @@ public class Assinador {
 
         // Create a DOMSignContext and specify the RSA PrivateKey and
         // location of the resulting XMLSignature's parent element.
-        DOMSignContext dsc = new DOMSignContext(keyEntry.getPrivateKey(), doc.getDocumentElement());
+        el = (Element) doc.getDocumentElement().getElementsByTagName(tag).item(0);
+        el.setIdAttribute("Id", true);
+        DOMSignContext dsc = new DOMSignContext(keyEntry.getPrivateKey(), el);
 
         // Create the XMLSignature, but don't sign it yet.
         XMLSignature signature = fac.newXMLSignature(si, ki);
