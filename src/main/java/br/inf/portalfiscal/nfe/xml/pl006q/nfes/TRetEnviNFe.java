@@ -18,7 +18,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * Tipo Retorno do Pedido de Concess„o de AutorizaÁ„o da Nota Fiscal EletrÙnica
+ * Tipo Retorno do Pedido de Concess√£o de Autoriza√ß√£o da Nota Fiscal Eletr√¥nica
  * 
  * <p>Java class for TRetEnviNFe complex type.
  * 

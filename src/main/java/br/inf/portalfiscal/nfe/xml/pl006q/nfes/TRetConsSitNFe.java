@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * Tipo Retorno de Pedido de Consulta da Situação Atual da Nota Fiscal Eletrônica 
+ * Tipo Retorno de Pedido de Consulta da SituaÃ§Ã£o Atual da Nota Fiscal EletrÃ´nica 
  * 
  * <p>Java class for TRetConsSitNFe complex type.
  * 

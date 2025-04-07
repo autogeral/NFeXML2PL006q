@@ -22,7 +22,7 @@ import org.w3._2000._09.xmldsig.SignatureType;
 
 
 /**
- * Tipo retorno Pedido de Cancelamento da Nota Fiscal Eletrônica
+ * Tipo retorno Pedido de Cancelamento da Nota Fiscal EletrÃ´nica
  * 
  * <p>Java class for TRetCancNFe_v200107 complex type.
  * 

@@ -53,7 +53,7 @@ public class ConsultaReciboNfeTest {
                 + "<infProt><tpAmb>1</tpAmb><verAplic>SP_NFE_PL_006e</verAplic>"
                 + "<chNFe>35110405437537000137550010000398471000002000</chNFe>"
                 + "<dhRecbto>2011-04-13T15:19:17</dhRecbto><cStat>502</cStat>"
-                + "<xMotivo>Rejei\u00e7\u00e3o: Erro na Chave de Acesso - Campo Id n\u00e3o corresponde à concatena\u00e7\u00e3o dos campos correspondentes</xMotivo>"
+                + "<xMotivo>Rejei\u00e7\u00e3o: Erro na Chave de Acesso - Campo Id n\u00e3o corresponde Ã  concatena\u00e7\u00e3o dos campos correspondentes</xMotivo>"
                 + "</infProt>"
                 + "</protNFe></retConsReciNFe>";
         Unmarshaller unmarshaller = null;

@@ -21,7 +21,7 @@ import org.w3._2000._09.xmldsig.SignatureType;
 
 
 /**
- * Tipo Pedido de Inutilização de Numeração da Nota Fiscal Eletrônica
+ * Tipo Pedido de InutilizaÃ§Ã£o de NumeraÃ§Ã£o da Nota Fiscal EletrÃ´nica
  * 
  * <p>Java class for TInutNFe complex type.
  * 

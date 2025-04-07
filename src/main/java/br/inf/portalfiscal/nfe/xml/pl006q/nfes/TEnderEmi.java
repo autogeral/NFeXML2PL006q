@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Dados do Endereço do Emitente  // 24/10/08 - desmembrado / tamanho mínimo
+ * Tipo Dados do EndereÃ§o do Emitente  // 24/10/08 - desmembrado / tamanho mÃ­nimo
  * 
  * <p>Java class for TEnderEmi complex type.
  * 

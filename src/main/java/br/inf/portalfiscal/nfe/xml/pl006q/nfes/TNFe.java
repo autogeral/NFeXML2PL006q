@@ -23,7 +23,7 @@ import org.w3._2000._09.xmldsig.SignatureType;
 
 
 /**
- * Tipo Nota Fiscal Eletrônica // v2.0
+ * Tipo Nota Fiscal EletrÃ´nica // v2.0
  * 
  * <p>Java class for TNFe complex type.
  * 

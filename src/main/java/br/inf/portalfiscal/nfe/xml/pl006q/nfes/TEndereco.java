@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Dados do Endereço  // 24/10/08 - tamanho mínimo
+ * Tipo Dados do EndereÃ§o  // 24/10/08 - tamanho mÃ­nimo
  * 
  * <p>Java class for TEndereco complex type.
  * 

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mínimo // v2.0
+ * Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mÃ­nimo // v2.0
  * 
  * <p>Java class for TLocal complex type.
  * 

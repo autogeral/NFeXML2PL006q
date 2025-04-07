@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Pedido de Consulta do Recido do Lote de Notas Fiscais Eletrônicas
+ * Tipo Pedido de Consulta do Recido do Lote de Notas Fiscais EletrÃ´nicas
  * 
  * <p>Java class for TConsReciNFe complex type.
  * 

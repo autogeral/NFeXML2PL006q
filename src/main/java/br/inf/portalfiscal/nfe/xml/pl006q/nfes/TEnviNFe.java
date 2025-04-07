@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- *  Tipo Pedido de Concess„o de AutorizaÁ„o da Nota Fiscal EletrÙnica
+ *  Tipo Pedido de Concess√£o de Autoriza√ß√£o da Nota Fiscal Eletr√¥nica
  * 
  * <p>Java class for TEnviNFe complex type.
  * 

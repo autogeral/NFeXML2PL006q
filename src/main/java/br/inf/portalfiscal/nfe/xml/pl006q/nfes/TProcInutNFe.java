@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * Tipo Pedido de inutilzação de númeração de  NF-e processado
+ * Tipo Pedido de inutilzaÃ§Ã£o de nÃºmeraÃ§Ã£o de  NF-e processado
  * 
  * <p>Java class for TProcInutNFe complex type.
  * 

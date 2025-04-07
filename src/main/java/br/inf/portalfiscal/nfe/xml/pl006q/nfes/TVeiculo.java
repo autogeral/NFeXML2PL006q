@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Dados do Veículo
+ * Tipo Dados do VeÃ­culo
  * 
  * <p>Java class for TVeiculo complex type.
  * 
